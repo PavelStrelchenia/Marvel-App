@@ -1,22 +1,26 @@
-import './appHeader.scss';
+import "./appHeader.scss";
 
 const AppHeader = () => {
     return (
         <header className="app__header">
             <h1 className="app__title">
-                <a href="#">
+                <button>
                     <span>Marvel</span> information portal
-                </a>
+                </button>
             </h1>
             <nav className="app__menu">
                 <ul>
-                    <li><a href="#">Characters</a></li>
+                    <li>
+                        <button>Characters</button>
+                    </li>
                     /
-                    <li><a href="#">Comics</a></li>
+                    <li>
+                        <button>Comics</button>
+                    </li>
                 </ul>
             </nav>
         </header>
-    )
-}
+    );
+};
 
 export default AppHeader;
